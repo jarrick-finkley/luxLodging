@@ -1,0 +1,128 @@
+.top_container{
+    height: 0%;
+    width: 100%;
+    position: relative;
+    padding: 0px 15px 200px 0px;
+    background-image: url("../images/mansion4.jpg");
+    background-size: 100% 140%;
+    color: white;
+}
+
+.nav_bar img {
+    width: 300px;
+    height: 50px;
+    margin: 13px 0px 0px 40px;
+    position: absolute;
+    top: 0px; 
+}
+
+.nav_bar ul {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    background:
+    
+}
+
+
+.nav_bar ul li {
+    display: inline;
+    list-style-type: none;
+    padding: 0px 10px 0px 40px;
+    font-size: 14px;
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+}
+
+
+.nav_bar a{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+.nav_bar a:hover {
+    text-decoration: none;
+    color: white;
+    /* border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(255, 255, 255, .3); */
+    background: rgb(255, 255, 255, .3);
+    box-shadow: 1px 0px 50px rgba(255,255,255, 1);
+    border-radius: 5px;
+
+
+
+    
+}
+
+
+
+.nav_bar {
+    background: rgb(0,0,0,.4); 
+    padding: 10px 0px 90px 0px;
+}
+
+.search {
+    z-index: 1;
+    background: rgb(0, 0, 0, .4);
+    width: 50%;
+    padding: 0px -0px 50px 0px;
+    margin: 120px 0px 0px 300px;
+    border-radius: 5px;
+}
+
+.search .heading {
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+}
+
+.search img {
+    margin: -10px -10px 0px -10px;
+    width: 150px;
+    height: 40px;
+}
+
+.form input[type=number], .form input[type=number]:focus {
+    color: black;
+    border-radius: 5px;
+    border-style: none;
+
+}
+
+.form input[type=date], .form input[type=date]:focus {
+    color: black;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.form select {
+    border-radius: 0px;
+    color: black;
+}
+
+.search .form {
+    text-align: center;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 10px 0px;
+}
+
+
+.search button {
+    position: absolute;
+    top: 105%;
+    left: 45%;
+    background: rgba(224, 224, 224, 0.651);
+    border-style: none;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+.search button:hover {
+    background: rgba(118, 127, 255, 0.3);
+    color: white;
+}
