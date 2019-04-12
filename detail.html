@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+ 
+        body {
+            /* background: linear-gradient(to bottom, rgb(178, 177, 222) 4%,rgb(192, 192, 245) 50%); */
+            /* background-image: url('images/wall22.jpg'); */
+            background-size: 100% 75%;
+            color: white;
+        }
+        .top_container {
+            padding-bottom: 0px;
+        }
+        .main_container {
+            height: 850px;
+        }
+        
+        .search {
+            color: white;
+            height: 750px;
+            background: linear-gradient(to bottom, rgb(116, 116, 150,.9) 50%,rgb(46, 46, 72,.9) 91%);
+            margin: 50px 0px 50px 0px;
+            padding: 0px 20px 0px 20px;
+            width: 25%;
+            left: 0%; 
+            top: 0px;
+        }
+
+        .form input[type=number], .form input[type=number]:focus {
+            color: black;
+            border-radius: 5px;
+            border-style: none;
+            margin-bottom: 20px;
+        }
+
+        .form input[type=date], .form input[type=date]:focus {
+            color: black;
+            border-radius: 5px;
+            border-style: none;
+            margin-bottom: 20px;
+        }
+
+        .form input[type=checkbox] {
+            margin: 0px 1px 15px 5px;
+        }
+
+        .form select {
+            border-radius: 0px;
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        .search button {
+            left: 35%;
+        }
+
+
+        .house_slider {
+            position: relative;
+            left: 10%;
+            top: 50px;
+            height: 350px;
+            
+        }
+        .house_slider img {
+            border-radius: 5px;
+        }
+
+        .other_slider {
+            position: relative;
+            top: 60px;
+            left: 9.2%;
+        }
+
+        .checkAvailability h3 {
+            color: black;
+            position: absolute;
+            left: 40%;
+            top: 45px;
+         
+        }
+
+        .checkAvailability .datePicker {
+            position: relative;
+            left: 34%;
+            top: 95px;
+        }
+
+
+
+       
+        .details {
+            background: linear-gradient(to bottom, rgb(96,96,124,.9) 50%,rgb(46, 46, 72,.9) 91%);
+            position: relative;
+            left: 90px;
+            padding: 40px 20px 0px 20px;
+            height: 750px;
+            margin: 50px 0px 50px 0px;
+            padding: 0px 20px 0px 20px;
+            width: 27%;
+            border-radius: 5px;
+        }
+
+        .host_details img {
+            border-radius: 50px;
+            position: absolute;
+            right: 18%;
+            top: -20px;
+        }
+
+        .host_details h4 {
+            padding-left: 15px;
+            
+        }
+
+        .details h3 {
+            text-align: center;
+            
+        }
+
+        .details ul {
+            list-style: none;
+        }
+        
+        .home_details h4 {
+            padding-left: 40px;
+        }
+
+        .home_details h5 {
+            margin-bottom: 0px;
+            font-size: 18px;
+        }
+
+        .book button {
+            position: absolute;
+            top: 62%;
+            left: 35%;
+            background: rgba(81, 194, 70, 0.651);
+            border-style: none;
+            color: white;
+            font-family: 'Barlow', sans-serif;
+            padding: 10px 30px 10px 30px;
+            border-radius: 5px;
+        }
+
+        .book button:hover {
+            background: rgba(34, 82, 30, 0.651);
+            box-shadow: 0px 0px 50px rgb(255,255,255);
+            color: white;
+        }
+
+    </style>
+
+
+    <title>Detail Page</title>
+</head>
+<body>
+    <div class="">
+        <video autoplay muted loop id="video">
+            <source src="./videos/Clouds6.mp4"/>
+        </video>
+    </div>
+    <div class="container top_container">
+        <div class="row nav_bar">
+            <div class="col-sm-2">
+                <img src="images/logo.png" alt="Logo"> 
+            </div>
+            <div class="col-sm-10">
+                <ul>
+                    <li><a href="file:///Users/jarrickfinkley/Desktop/Lessons/OperationH/index.html#results">Home</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container main_container">
+        <div class="row">
+            <div class="col-sm-4 search">
+                <div class="row">
+                    <div class="col-sm-12 heading">
+                        <h1>Plan your stay in luxury.</h1>
+                    </div>
+                    <div class="col-sm-12 form">
+                        <form action="#">
+                            <label for="#">Locations:</label>
+                            <select name="locations" id="">
+                                <option value="losangeles">Los Angeles, CA</option>
+                                <option value="newyork">New York, NY</option>
+                                <option value="atlanta">Atlanta, GA</option>
+                                <option value="neworleans">New Orleans, LA</option>
+                                <option value="chicago">Chicago, IL</option>
+                                <option value="boston">Boston, MA</option>
+                                <option value="nashville">Nashville, TN</option>
+                                <option value="washingtondc">Washington DC</option>
+                                <option value="sanfrancisco">San Fransisco, CA</option>
+                                <option value="austin">Austin, TX</option>
+                                <option value="london">London, ENG</option>
+                                <option value="tokyo">Tokyo, JP</option>
+                            </select>
+                        </form>
+                        <form action="#">
+                            <label for="#">Number of Bedrooms:</label>
+                            <input type="number"><br/>
+                    
+                            <label for="#">Number of Bathrooms:</label>
+                            <input type="number"><br/>
+                        </form>
+                        <form action="#">
+                            <label for="#">Home Types:</label>
+                            <input type="checkbox" name="mansion" value="mansion" id="">Mansion   
+                            <input type="checkbox" name="penthouse" value="penthouse" id="">Penthouse/High-Rise   
+                            <input type="checkbox" name="cabin" value="cabin" id="">Cabin 
+                            <input type="checkbox" name="remote" value="remote" id="">Remote 
+                        </form>
+                        <form action="# date">
+                            <label for="#">Date Check-in:</label>
+                            <input type="date" id="start"><br/>
+                            <label for="#">Date Check-out:</label>
+                            <input type="date" id="end">
+                        </form>
+                        <a href="file:///Users/jarrickfinkley/Desktop/Lessons/OperationH/products.html"><button onClick="results()"><i class="fas fa-search"></i> Search</button></a>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="house_slider">
+                    <div><img src="https://via.placeholder.com/450x350" alt=""></div>
+                    <div><img src="https://via.placeholder.com/450x350" alt=""></div>
+                    <div><img src="https://via.placeholder.com/450x350" alt=""></div>
+                    <div><img src="https://via.placeholder.com/450x350" alt=""></div>
+                </div>
+                
+                <div class="other_slider">
+                    <div><img src="https://via.placeholder.com/118" alt=""></div>
+                    <div><img src="https://via.placeholder.com/118" alt=""></div>
+                    <div><img src="https://via.placeholder.com/118" alt=""></div>
+                    <div><img src="https://via.placeholder.com/118" alt=""></div>  
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 checkAvailability">
+                        <h3>Check Availability</h3>
+                        <div class="datePicker"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 details">
+                <div class="row">
+                    <h3>Host</h3>
+                </div>
+                <div class="row host_details">
+                    <div class="col-sm-8">
+                        <h4>Name:</h4>
+                        <h4>Rating:</h4>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="https://via.placeholder.com/100" alt="">
+                    </div>
+                </div>
+                <div class="row home_details">
+                    <h3>Home Details</h3>
+                    <h4>Price Per Night: $100</h4>
+                    <ul>
+                        <li><h5>Address:</h5> 215 Alendale Dr. Jackson, MS 39180</li>
+                        <li><h5>Bedrooms:</h5> 5</li>
+                        <li><h5>Bath:</h5> 5.5</li>
+                        <li><h5>Features:</h5> Pool, Remote, Skyline view</li>
+                        <li><h5>Amenities:</h5> This, this, this, and that</li>
+                    </ul>
+                </div>
+                <div class="row book">
+                    <button>Book</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="lower_nav_image">
+        <div class="container">
+            <div class="row">
+                <div class="lower_nav_grey_layer">
+                    <div class="col-xs-4 lower_nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Log in</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8 lower_nav_social">
+                        <h2>Follow Us</h2>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>COPYRIGHT 2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        
+
+        $(function(){
+            $('.datePicker').datepicker();
+        })
+
+        $('.house_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.other_slider'
+        });
+
+        $('.other_slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.house_slider',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+        });
+
+       
+    </script>
+</body>
+</html>
