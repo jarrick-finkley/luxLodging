@@ -374,9 +374,9 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
-        $(function(){
-            $('.datePicker').datepicker();
-        })
+        // $(function(){
+        //     $('.datePicker').datepicker();
+        // })
 
         $('.house_slider').slick({
         slidesToShow: 1,
@@ -395,6 +395,8 @@
         focusOnSelect: true
         });
 
+        $('.datePicker').datepicker();
+        
         function results() {
             document.getElementById('results').style.animationName= "example";
             document.getElementById('resultList').style.display="block";
